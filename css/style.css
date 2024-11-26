@@ -49,12 +49,18 @@ header ul li a:hover {
     background-image: url('../images/ciel_etoile.jpg');
     background-size: cover;
     background-position: center;
+    background-attachment: fixed;
 }
-.accueil .profile img {
+.accueil .profile>img {
     border-radius: 50%;
-    width: 200px;
-    height: 200px;
+    width: 25%;
+    height: 25%;
     margin-bottom: 15px;
+    transform: scale(1) rotate(0deg); 
+    transition: transform 5s;
+}    
+.accueil .profile>img:hover {
+    transform: scale(1.2) rotate(360deg);
 }
 .accueil .profile h1 {
     font-size: 2.2em;
@@ -119,6 +125,7 @@ main {
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
+    background-attachment: fixed;
     color: white;
     padding: 130px 20px;
 }
@@ -142,8 +149,9 @@ main {
 .contact {
     background-image: url('../images/arbre.jpg');
     background-size: cover;
-    color: white;
+    color: white;   
     text-align: center;
+    background-attachment: fixed;
 }
 .contact_boutton {
     margin-top: 10px;
